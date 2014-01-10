@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/user_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_head_view" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_10" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/user_info_userface"
+                android:layout_width="70.0dip"
+                android:layout_height="70.0dip"
+                android:background="@drawable/widget_dface_border"
+                android:clickable="true"
+                android:padding="3.0dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/widget_dface" />
+
+            <TextView
+                android:id="@+id/user_info_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_toRightOf="@id/user_info_userface"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text_size_15" />
+
+            <TextView
+                android:id="@+id/user_info_realname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/user_info_username"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/text_size_15" />
+
+            <ImageView
+                android:id="@+id/user_info_gender"
+                android:layout_width="18.0dip"
+                android:layout_height="18.0dip"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_toRightOf="@id/user_info_realname"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:id="@+id/user_info_siganature"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user_info_username"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_toRightOf="@id/user_info_userface"
+                android:layout_weight="1.0"
+                android:duplicateParentState="true"
+                android:textColor="#ff000000"
+                android:textSize="@dimen/text_size_15" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_20"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/user_info_topics_ll"
+                style="@style/userinfo_item_bg"
+                android:onClick="getMyTopics" >
+
+                <TextView
+                    android:id="@+id/user_info_topics"
+                    android:text="0" 
+                    style="@style/userinfo_item_get" />
+
+                <TextView
+                    style="@style/userinfo_item_label"
+                    android:text="@string/weibo" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/user_info_favorites_ll"
+                style="@style/userinfo_item_bg"
+                android:layout_marginLeft="@dimen/margin_15"
+                android:onClick="getFavorite" >
+
+                <TextView
+                    android:id="@+id/user_info_favorites"
+                    android:text="0" 
+                    style="@style/userinfo_item_get" />
+
+                <TextView
+                    style="@style/userinfo_item_label"
+                    android:text="@string/favorite" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/user_info_followers_ll"
+                style="@style/userinfo_item_bg"
+                android:layout_marginLeft="@dimen/margin_15"
+                android:onClick="getFollow" >
+
+                <TextView
+                    android:id="@+id/user_info_followers"
+                    android:text="0" 
+                    style="@style/userinfo_item_get" />
+
+                <TextView
+                    style="@style/userinfo_item_label"
+                    android:text="@string/focus" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/user_info_fans_ll"
+                style="@style/userinfo_item_bg"
+                android:layout_marginLeft="@dimen/margin_15"
+                android:onClick="getFans" >
+
+                <TextView
+                    android:id="@+id/user_info_fans"
+                    android:text="0" 
+                    style="@style/userinfo_item_get" />
+
+                <TextView
+                    style="@style/userinfo_item_label"
+                    android:text="@string/fans" />
+            </LinearLayout>
+        </LinearLayout>
+        
+        <TextView
+            android:id="@+id/user_info_from"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_weight="1.0"
+            android:background="@drawable/about_bg"
+            android:duplicateParentState="true"
+            android:gravity="center"
+            android:textColor="#ff000000"
+            android:textSize="@dimen/text_size_15" />
+        <Button
+             android:id="@+id/user_info_add"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_weight="1.0"
+            android:background="@drawable/user_info_add"
+            android:duplicateParentState="true"
+            android:gravity="center"
+            android:textColor="#ff000000"
+            android:text="@string/add"
+            android:onClick="add"
+            android:textSize="@dimen/text_size_15" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

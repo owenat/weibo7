@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_head_view" />
+
+    <LinearLayout
+        style="@style/common_linear_layout"
+        android:layout_marginTop="@dimen/margin_20"
+        android:background="@drawable/setting_top_bg"
+        android:onClick="getuserInfo" >
+
+        <TextView
+            style="@style/common_text_view"
+            android:drawableLeft="@drawable/userinfo_icon"
+            android:text="@string/userinfo" />
+
+        <ImageView style="@style/common_arrow" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/common_linear_layout"
+        android:background="@drawable/setting_bottom_bg"
+        android:onClick="getMyComment" >
+
+        <TextView
+            style="@style/common_text_view"
+            android:drawableLeft="@drawable/feedback_icon"
+            android:text="@string/mycomment" />
+
+        <ImageView style="@style/common_arrow" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/log_out"
+        android:layout_width="300.0dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_20"
+        android:background="@drawable/logout_btn_bg"
+        android:shadowColor="#ff333333"
+        android:shadowDy="1.0"
+        android:shadowRadius="1.0"
+        android:text="@string/logout"
+        android:textColor="#ffffffff"
+        android:textSize="@dimen/text_size_15" />
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/tabbar_bg">
+
+    <Button
+        android:id="@+id/topic_retweet"
+        style="@style/Topic_tab_bottom"
+        android:layout_marginLeft="@dimen/margin_40"
+        android:checked="true"
+        android:drawableLeft="@drawable/toolbar_icon_retweet"
+        android:onClick="retweet"
+        android:text="@string/topic_send" />
+
+    <Button
+        android:id="@+id/topic_comment"
+        style="@style/Topic_tab_bottom"
+        android:layout_marginLeft="@dimen/margin_15"
+        android:drawableLeft="@drawable/toolbar_icon_comment"
+        android:onClick="comment"
+        android:text="@string/topic_message" />
+
+    <Button
+        android:id="@+id/topic_like"
+        style="@style/Topic_tab_bottom"
+        android:layout_marginLeft="@dimen/margin_15"
+        android:drawableLeft="@drawable/toolbar_icon_like"
+        android:onClick="like"
+        android:text="@string/topic_good" />
+
+</LinearLayout>

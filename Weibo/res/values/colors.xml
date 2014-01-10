@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="blue">#ff2aa3cb</color>
+    <color name="orange">#ffee7624</color>
+    <color name="half_transparent">#aa000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="webview_bg">#ffe9ebed</color>
+    <color name="root_bg">#fff4f4f4</color>
+    <color name="face_bg">#ffeef1f4</color>
+    <color name="white">#ffffff</color>
+    <color name="gold">#b89766</color>
+
+</resources>

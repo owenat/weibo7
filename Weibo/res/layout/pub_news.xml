@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_head_view" />
+
+    <LinearLayout
+        android:id="@+id/tweet_pub_message"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/tweet_pub_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/review_bg_blue"
+            android:padding="5.0dip" >
+
+            <ProgressBar style="@style/loading_small" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3.0dip"
+                android:text="@string/sending"
+                android:textColor="@android:color/black"
+                android:textSize="15.0sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/tweet_pub_form"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0" >
+
+        <EditText
+            android:id="@+id/tweet_pub_content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:autoLink="web"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="@string/weibo_content_hint" />
+
+        <ImageView
+            android:id="@+id/tweet_pub_image"
+            android:layout_width="60.0dip"
+            android:layout_height="45.0dip"
+            android:layout_gravity="bottom|left|center"
+            android:layout_marginBottom="5.0dip"
+            android:layout_marginLeft="5.0dip"
+            android:clickable="true"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <include layout="@layout/tweet_pub_footer" />
+
+</LinearLayout>

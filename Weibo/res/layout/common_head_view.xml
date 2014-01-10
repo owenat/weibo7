@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="56.0dip"
+    android:background="@drawable/weibo_title" >
+
+    <ImageView
+        android:id="@+id/write_btn"
+        style="@style/banner_btn"
+        android:layout_marginLeft="@dimen/banner_margin_side"
+        android:onClick="write"
+        android:src="@drawable/title_write" />
+
+    <ImageView
+        android:id="@+id/back_btn"
+        style="@style/banner_btn"
+        android:layout_marginLeft="@dimen/banner_margin_side"
+        android:onClick="back"
+        android:src="@drawable/title_back" />
+
+    <TextView
+        android:id="@+id/head_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/banner_margin_top"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_18"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/refresh_btn"
+        style="@style/banner_btn"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/banner_margin_side"
+        android:onClick="refresh"
+        android:src="@drawable/title_refresh" />
+
+    <ProgressBar
+        android:id="@+id/loading_bar"
+        style="@android:style/Widget.ProgressBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:indeterminateDrawable="@drawable/progress_small"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/send_btn"
+        style="@style/banner_btn"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/banner_margin_side"
+        android:onClick="send"
+        android:src="@drawable/title_send" />
+
+</RelativeLayout>

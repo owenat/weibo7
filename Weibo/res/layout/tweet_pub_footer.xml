@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tabbar_bg"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/tweet_pub_footbar_camera"
+            style="@style/main_footbar_image"
+            android:onClick="camera"
+            android:src="@drawable/pub_camera" />
+
+        <ImageView
+            android:id="@+id/tweet_pub_footbar_pict"
+            style="@style/main_footbar_image"
+            android:onClick="image"
+            android:src="@drawable/pub_pict" />
+
+        <ImageView
+            android:id="@+id/tweet_pub_footbar_at"
+            style="@style/main_footbar_image"
+            android:onClick="at"
+            android:src="@drawable/pub_at" />
+
+        <ImageView
+            android:id="@+id/tweet_pub_footbar_emotion"
+            style="@style/main_footbar_image"
+            android:onClick="emotion"
+            android:src="@drawable/pub_emotion" />
+
+        <ImageView
+            android:id="@+id/tweet_pub_footbar_trend"
+            style="@style/main_footbar_image"
+            android:onClick="trend"
+            android:src="@drawable/pub_trend" />
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/tweet_pub_faces"
+        android:layout_width="fill_parent"
+        android:layout_height="220.0dip"
+        android:background="@color/face_bg"
+        android:columnWidth="50.0dip"
+        android:fadingEdge="none"
+        android:gravity="center"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="auto_fit"
+        android:scrollingCache="false"
+        android:stretchMode="columnWidth"
+        android:visibility="gone" />
+
+</LinearLayout>

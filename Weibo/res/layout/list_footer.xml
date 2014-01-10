@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="44.0dip"
+    android:gravity="center"
+    android:padding="8.0dip" >
+
+    <LinearLayout
+        android:id="@+id/get_more_footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+     
+        android:gravity="center" >
+
+        <ProgressBar
+            android:id="@+id/moreFooterProgressBar"
+            style="@android:style/Widget.ProgressBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateDrawable="@drawable/progress_small"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

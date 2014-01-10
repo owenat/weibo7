@@ -1,0 +1,84 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ouc.sei.weibo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="ouc.sei.app.WeiboApp"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".WelcomeActivity"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".TabHostActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".MessageActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".AtMeActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".InfoActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".PubActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+        </activity>
+        <activity
+            android:name=".MyTopicActivity"
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name=".UserInfoActivity"
+            android:label="@string/app_name" >
+        </activity>
+            <activity
+            android:name=".FansListActivity"
+            android:label="@string/app_name" >
+        </activity>
+            <activity
+            android:name=".FollowListActivity"
+            android:label="@string/app_name" >
+        </activity>
+          <activity
+            android:name=".MyFavActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="TopicDetailActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".ImageActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.HalfTranslucent">
+        </activity>
+    </application>
+
+</manifest>
