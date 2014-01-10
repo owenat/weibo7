@@ -1,9 +1,13 @@
-SinaApiÊµÏÖ 
-UIÖ÷½çÃætabhost ÁĞ±í°üÀ¨ÏÂÀ­Ë¢ĞÂ ÍùÏÂ¼ÓÔØ¸ü¶à 
-WelcomeActivity.class »¶Ó­½çÃæ
-TopicCommonActivity.class Î¢²©ÁĞ±í³éÏóÀà
-HomeActivity.class Î¢²©Ê×Ò³
-MessageActivity.class Ë½ĞÅÒ³Ãæ
-UserInfoActivity.class ÓÃ»§ĞÅÏ¢
-AtMeActivity.class @ÎÒµÄÎ¢²©¼°ÆÀÂÛ
-MyListView ÏÂÀ­Ë¢ĞÂ¿Ø¼ş 
+SinaApiå®ç° 
+UIä¸»ç•Œé¢TabHost åˆ—è¡¨åŒ…æ‹¬ ä¸‹æ‹‰åˆ·æ–° å¾€ä¸‹åŠ è½½æ›´å¤š
+ç”¨åˆ°çš„æŠ€æœ¯ Aquery Json OAuth2.0
+
+===========================================================
+WelcomeActivity.class æ¬¢è¿ç•Œé¢
+TopicCommonActivity.class å¾®åšåˆ—è¡¨æŠ½è±¡ç±»
+HomeActivity.class å¾®åšé¦–é¡µ
+MessageActivity.class ç§ä¿¡é¡µé¢
+UserInfoActivity.class ç”¨æˆ·ä¿¡æ¯
+AtMeActivity.class @æˆ‘çš„å¾®åšåŠè¯„è®º
+MyListView ä¸‹æ‹‰åˆ·æ–°æ§ä»¶ 
+
